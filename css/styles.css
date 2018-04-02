@@ -1,0 +1,69 @@
+
+* {
+  box-sizing: border-box;
+  font-family: serif;
+  --main-bg-color: #8b99e8;  /*Dark purple*/
+  --main-nav-color: #5d5172; /*Light purple*/
+}
+
+
+body {
+
+
+}
+p {
+  padding: .4em;
+  margin: 0;
+  color: white;
+}
+
+div#top {
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+
+}
+span#border {
+border-right: 2px solid var(--main-nav-color);
+
+
+}
+span#border-top {
+display: inline-block;
+border-left: 2px solid white;
+height: 40px;
+margin-right: 10px;
+}
+span#profile-name {
+  margin-left: 10px;
+  color: white;
+  margin-right: 10px;
+}
+
+div#app {
+font-size: 1.3em;
+letter-spacing: 1px;
+
+}
+div#flex-end {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+svg {
+display: inline-block;
+padding-right: 40px;
+
+}
