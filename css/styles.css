@@ -4,13 +4,9 @@
   font-family: serif;
   --main-bg-color: #8b99e8;  /*Dark purple*/
   --main-nav-color: #5d5172; /*Light purple*/
+  --lighterPurple: #d6cee0; /*line chart purple*/
 }
 
-
-body {
-
-
-}
 p {
   padding: .4em;
   margin: 0;
@@ -21,18 +17,13 @@ div#top {
   background-color: var(--main-bg-color);
   display: flex;
   justify-content: space-between;
-  height: 60px;
+  padding: 1em;
   align-items: center;
-
-}
-span#border {
-border-right: 2px solid var(--main-nav-color);
-
 
 }
 span#border-top {
 display: inline-block;
-border-left: 2px solid white;
+border-left: 2px solid var(--main-nav-color);
 height: 40px;
 margin-right: 10px;
 }
@@ -53,7 +44,12 @@ div#flex-end {
   justify-content: flex-end;
   align-items: center;
 }
-
+div#nav-bar {
+  background: var(--main-nav-color);
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
 
 .avatar {
   height: 40px;
@@ -62,6 +58,20 @@ div#flex-end {
   display: inline-block;
 
 }
+input#top-search {
+  display: block;
+  margin: auto;
+  width: 95%;
+  border-radius: .8em;
+  margin-top: .3em;
+  padding: .5em;
+
+}
+h2 {
+  width: 50%;
+  margin: .6em auto;
+}
+
 svg {
 display: inline-block;
 padding-right: 40px;
