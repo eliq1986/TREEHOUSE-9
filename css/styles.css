@@ -5,6 +5,8 @@
   --main-bg-color: #8b99e8;  /*Dark purple*/
   --main-nav-color: #5d5172; /*Light purple*/
   --lighterPurple: #d6cee0; /*line chart purple*/
+  --twitterBlue: #00aced; /*twitterBlue*/
+  --faceBookBlue: #3b5998; /*facebookBlue*/
 }
 
 p {
@@ -23,7 +25,7 @@ div#top {
 }
 span#border-top {
 display: inline-block;
-border-left: 2px solid var(--main-nav-color);
+border-left: 1px solid var(--main-nav-color);
 height: 40px;
 margin-right: 10px;
 }
@@ -68,12 +70,19 @@ input#top-search {
 
 }
 h2 {
-  width: 50%;
+  width: 100%;
   margin: .6em auto;
+  text-align: center;
 }
 
 svg {
 display: inline-block;
 padding-right: 40px;
+
+}
+
+g#blah {
+  fill: red;
+  
 
 }
