@@ -68,12 +68,14 @@ input#top-search {
   display: block;
   margin: auto;
   width: 95%;
-  border: .5px solid #f2f2f2;
   border-radius: .5em;
   margin-top: .3em;
   padding: .5em;
   background: url("../icons/magnify.svg") no-repeat 97% 50% #F5F5F5;
   background-size: 20px 20px;
+  border: .5px solid #F2F2F2;
+  background-color: #F2F2F2;
+  box-shadow: inset 0 0 1px;
 }
 h2, h3 {
   width: 100%;
@@ -138,25 +140,19 @@ div.wiget-container {
   }
 
 
-input#search-user {
+input#search-user, textarea {
   display: block;
   margin: auto;
   width: 95%;
   border-radius: .5em;
   margin-top: .3em;
   padding: .5em;
-  background-color: #F5F5F5;
+  border: .5px solid #F2F2F2;
+  background-color: #F2F2F2;
+  box-shadow: inset 0 0 1px;
 }
 
-textarea {
-  width: 95%;
-  margin: auto;
-  display: block;
-  border-radius: .5em;
-  margin-top: .3em;
-  border: 2px solid gray;
-  background: #F5F5F5;
-}
+
 button#send {
   background-color: var(--main-nav-color);
   color: #fff;
@@ -173,7 +169,6 @@ select {
   display: block;
   height: 48px;
   width: 95%;
-  border: 1px solid #666666;
   padding: 9px;
   font-size: 16px;
   color: #666666;
@@ -183,7 +178,9 @@ select {
   appearance: none;
   background: url("../icons/down-arrow.svg") no-repeat 97% 50% #F5F5F5;
   background-size: 20px 20px;
-
+  border: .5px solid #F2F2F2;
+  background-color: #F2F2F2;
+  box-shadow: inset 0 0 1px;
 }
 div#select {
   margin: auto;
@@ -261,7 +258,7 @@ input#top-search:focus {
   justify-content: space-between;
 }
 div#toggle-container {
-  
+
 }
 
 @media (min-width: 768px) {
