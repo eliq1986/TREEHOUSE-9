@@ -155,6 +155,23 @@ button#send {
   padding: 1em;
 
 }
-.toggle {
-  
+select {
+  margin: 0px;
+  margin-top: 12px;
+  height: 48px;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #666666;
+  padding: 9px;
+  font-family: tescoregular;
+  font-size: 16px;
+  color: #666666;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../icons/down.png") no-repeat 97% 50% #ffffff;
+  background-size: 30px 30px;
+
 }
