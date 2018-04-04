@@ -2,8 +2,8 @@ const CHART = document.getElementById("lineChart").getContext("2d");
 const barChart = document.getElementById("barChart").getContext("2d");
 const pieChart = document.getElementById("pieChart").getContext("2d");
 const sendButton = document.getElementById("send");
-
-console.log(sendButton);
+const searchUser = document.getElementById("search-user").value;
+const textArea = document.getElementById("textarea").value;
 
 let lineChart = new Chart(CHART, {
   type: "line",
@@ -107,4 +107,11 @@ let pChart= new Chart(pieChart, {
 
 
        }
+});
+
+sendButton.addEventListener("click", function () {
+   if (searchUser === " " || textArea === " ") {
+          alert("Please eneter");
+   }
+
 });
