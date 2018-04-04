@@ -71,7 +71,8 @@ input#top-search {
   border-radius: .5em;
   margin-top: .3em;
   padding: .5em;
-
+  background: url("../icons/magnify.svg") no-repeat 97% 50% #F5F5F5;
+  background-size: 20px 20px;
 }
 h2, h3 {
   width: 100%;
@@ -123,10 +124,15 @@ div.widget-flex {
   justify-content: space-between;
 
 }
-div.wiget-container{
+div.wiget-container {
   padding: 1em;
-
 }
+  .arrow {
+    background: url("../icons/arrow-right.svg") no-repeat 97% 50%;
+    background-size: 20px 20px;
+  }
+
+
 input#search-user {
   display: block;
   margin: auto;
@@ -134,6 +140,7 @@ input#search-user {
   border-radius: .5em;
   margin-top: .3em;
   padding: .5em;
+  background-color: #F5F5F5;
 }
 
 textarea {
@@ -143,6 +150,7 @@ textarea {
   border-radius: .5em;
   margin-top: .3em;
   border: 2px solid gray;
+  background: #F5F5F5;
 }
 button#send {
   background-color: var(--main-nav-color);
@@ -156,22 +164,41 @@ button#send {
 
 }
 select {
-  margin: 0px;
-  margin-top: 12px;
+  margin: 1em auto;
+  display: block;
   height: 48px;
-  width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #666666;
+  width: 95%;
+  border: 1px solid #666666;
   padding: 9px;
-  font-family: tescoregular;
   font-size: 16px;
   color: #666666;
   -webkit-appearance: none;
-  -webkit-border-radius: 0px;
+  -webkit-border-radius: .5em;
   -moz-appearance: none;
   appearance: none;
-  background: url("../icons/down.png") no-repeat 97% 50% #ffffff;
-  background-size: 30px 30px;
+  background: url("../icons/down-arrow.svg") no-repeat 97% 50% #F5F5F5;
+  background-size: 20px 20px;
 
+}
+div#select {
+  margin: auto;
+  width: 100%;
+}
+button.save_cancel-btn {
+  background-color: var(--main-nav-color);
+  color: #fff;
+  width: 95%;
+  margin: auto;
+  display: block;
+  border-radius: .5em;
+  margin-top: .3em;
+  padding: 1em;
+
+}
+button.save_cancel-btn + button.save_cancel-btn{
+  background-color: #C9C9C9;
+}
+
+input#top-search:focus {
+  background: white;
 }
