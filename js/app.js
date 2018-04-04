@@ -16,7 +16,7 @@ let lineChart = new Chart(CHART, {
             borderColor: [
                 "rgb(139, 153, 232)"
             ],
-            borderWidth: 2
+            borderWidth: 1
         }]
     },
    options: {
@@ -24,8 +24,12 @@ let lineChart = new Chart(CHART, {
         display: true,
         text: "Traffic",
         fontSize: 20,
-        position: "top"
+        position: "top",
 
+
+      },
+      legend:{
+        display: false
       }
 
    }
@@ -38,7 +42,7 @@ let bChart= new Chart(barChart, {
         labels: ["S", "M", "T", "W", "T", "F", "S"],
         datasets: [{
             label: '# of Votes',
-            data: [50, 100, 180, 120, 230, 200],
+            data: [50, 100, 180, 120, 230, 200, 140],
             backgroundColor: [
                 "#8b99e8",
                 "#8b99e8",
@@ -46,6 +50,8 @@ let bChart= new Chart(barChart, {
                 "#8b99e8",
                 "#8b99e8",
                 "#8b99e8",
+                "#8b99e8",
+
           ],
             borderColor: [
 
@@ -60,6 +66,9 @@ let bChart= new Chart(barChart, {
          fontSize: 20,
          position: "top"
 
+       },
+       legend:{
+         display: false
        }
 }
 });
@@ -69,7 +78,7 @@ let pChart= new Chart(pieChart, {
   data: {
         labels: ["Phones", "Tablet", "Desktop",],
         datasets: [{
-            label: '# of Votes',
+
             data: [12, 19, 3],
             backgroundColor: [
                 "#8b99e8",
@@ -85,8 +94,15 @@ let pChart= new Chart(pieChart, {
          display: true,
          text: "Mobile User",
          fontSize: 20,
-         position: "top"
+         position: "top",
+
+
+       },
+        legend: {
+         position: "right",
 
        }
-}
+
+
+       }
 });
