@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   font-family: serif;
@@ -14,6 +13,10 @@ p {
   margin: 0;
   color: white;
 }
+a {
+  text-decoration: none;
+  color: var(--main-bg-color);
+}
 
 div#top {
   background-color: var(--main-bg-color);
@@ -27,7 +30,7 @@ span#border-top {
 display: inline-block;
 border-left: 1px solid var(--main-nav-color);
 height: 40px;
-margin-right: 10px;
+
 }
 span#profile-name {
   margin-left: 10px;
@@ -58,18 +61,19 @@ div#nav-bar {
   width: 40px;
   border-radius: 50%;
   display: inline-block;
+  margin-left: 1em;
 
 }
 input#top-search {
   display: block;
   margin: auto;
   width: 95%;
-  border-radius: .8em;
+  border-radius: .5em;
   margin-top: .3em;
   padding: .5em;
 
 }
-h2 {
+h2, h3 {
   width: 100%;
   margin: .6em auto;
   text-align: center;
@@ -78,11 +82,79 @@ h2 {
 svg {
 display: inline-block;
 padding-right: 40px;
-
 }
 
-g#blah {
-  fill: red;
-  
+.flexIt {
+  display: flex;
 
+}
+span.social_Media {
+   margin-left: 3.5em;
+   margin-top: .3em;
+   display: block;
+}
+span.amount {
+  font-size: 2em;
+  margin-left: 2em;
+}
+span.widget-name {
+ color: black;
+ width: 90%;
+ font-size: .9em;
+ margin-left: 1em;
+
+
+}
+ span.email{
+  color: black;
+  margin-left: 1em;
+
+}
+img.avatar_ok {
+  float: left;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+div.widget-flex {
+  display: flex;
+  justify-content: space-between;
+
+}
+div.wiget-container{
+  padding: 1em;
+
+}
+input#search-user {
+  display: block;
+  margin: auto;
+  width: 95%;
+  border-radius: .5em;
+  margin-top: .3em;
+  padding: .5em;
+}
+
+textarea {
+  width: 95%;
+  margin: auto;
+  display: block;
+  border-radius: .5em;
+  margin-top: .3em;
+  border: 2px solid gray;
+}
+button#send {
+  background-color: var(--main-nav-color);
+  color: #fff;
+  width: 95%;
+  margin: auto;
+  display: block;
+  border-radius: .5em;
+  margin-top: .3em;
+  padding: 1em;
+
+}
+.toggle {
+  
 }
