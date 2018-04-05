@@ -6,6 +6,7 @@
   --lighterPurple: #d6cee0; /*line chart purple*/
   --twitterBlue: #00aced; /*twitterBlue*/
   --faceBookBlue: #3b5998; /*facebookBlue*/
+  --concreteGray: #666666;
 }
 
 p {
@@ -18,9 +19,38 @@ a {
   color: var(--main-bg-color);
 }
 
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+
+}
 .container {
   width: 95%;
-  margin: auto;
+  margin: 1em auto;
+}
+
+.alert {
+  background: var(--main-bg-color);
+  color: white;
 }
 
 div#top {
@@ -86,6 +116,7 @@ h2, h3 {
   width: 100%;
   margin: .6em auto;
   text-align: center;
+  color: #666666;
 }
 
 svg {
@@ -142,6 +173,7 @@ div.wiget-container {
     background-size: 20px 20px;
   }
   fieldset {
+    padding: 0;
     border: none;
   }
 
@@ -263,3 +295,11 @@ div#toggle-container {
  width: 95%;
  margin: auto;
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+
+}
+@media (mind-width: )

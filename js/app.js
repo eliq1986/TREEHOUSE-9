@@ -115,16 +115,17 @@ let pChart= new Chart(pieChart, {
         let searchUser = document.getElementById("search-user").value;
      let textArea = document.getElementById("textarea").value;
       if (searchUser.trim() === "" || textArea.trim() === "") {
-         alert("Please fill out all fields");
+         swal("Please fill out all fields","Error ", "error");
          return false;
       }
       else if (textArea.length < 10){
-         alert("Message must be more than 10 letters");
+         swal("Message must be more than 10 letters", "Error", "error");
          return false;
       }
       else {
-        alert("Message sent");
+        alert("Message Sent")
         return true;
-      }
 
-   }
+        }
+
+      }

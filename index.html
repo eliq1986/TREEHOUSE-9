@@ -137,6 +137,10 @@
 
 <h2>DASHBOARD</h2>
 
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  This is an alert box.
+</div>
 
 <!--CHARTS BEGIN------------------------------->
 <canvas id="lineChart" height="400" width="400">
@@ -346,12 +350,14 @@
 <!--Message User Starts----------------------->
 <h3>Message User</h3>
 
-<form action="index.html" method="post" onsubmit="return checkIt();">
+   <form action="index.html" method="get" onsubmit="return checkIt();">
+     <fieldset>
     <input type="text" name="search" placeholder="Search for User" id="search-user">
     <textarea name="name" rows="8" cols="20" id="textarea"></textarea>
     <button id="send">
       Send
     </button>
+     </fieldset>
 </form>
 <!--MESSAGE USER ENDS----------------------->
 
@@ -486,6 +492,10 @@
 
  </main>
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js">
+
+ </script>
+
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
 
  </script>
 
