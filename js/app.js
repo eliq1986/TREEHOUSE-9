@@ -129,3 +129,8 @@ let pChart= new Chart(pieChart, {
         }
 
       }
+
+
+           $(".closebtn").on("click", function() {
+             $(".alert").hide(500);
+      });
