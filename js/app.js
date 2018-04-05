@@ -2,8 +2,8 @@ const CHART = document.getElementById("lineChart").getContext("2d");
 const barChart = document.getElementById("barChart").getContext("2d");
 const pieChart = document.getElementById("pieChart").getContext("2d");
 const sendButton = document.getElementById("send");
-const searchUser = document.getElementById("search-user").value;
-const textArea = document.getElementById("textarea").value;
+
+
 
 let lineChart = new Chart(CHART, {
   type: "line",
@@ -109,9 +109,22 @@ let pChart= new Chart(pieChart, {
        }
 });
 
-sendButton.addEventListener("click", function () {
-   if (searchUser === " " || textArea === " ") {
-          alert("Please eneter");
-   }
 
-});
+
+  function checkIt() {
+        let searchUser = document.getElementById("search-user").value;
+     let textArea = document.getElementById("textarea").value;
+      if (searchUser.trim() === "" || textArea.trim() === "") {
+         alert("Please fill out all fields");
+         return false;
+      }
+      else if (textArea.length < 10){
+         alert("Message must be more than 10 letters");
+         return false;
+      }
+      else {
+        alert("Message sent");
+        return true;
+      }
+
+   }

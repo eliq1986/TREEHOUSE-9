@@ -18,6 +18,11 @@ a {
   color: var(--main-bg-color);
 }
 
+.container {
+  width: 95%;
+  margin: auto;
+}
+
 div#top {
   background-color: var(--main-bg-color);
   display: flex;
@@ -182,10 +187,7 @@ select {
   background-color: #F2F2F2;
   box-shadow: inset 0 0 1px;
 }
-div#select {
-  margin: auto;
-  width: 100%;
-}
+
 button.save_cancel-btn {
   background-color: var(--main-nav-color);
   color: #fff;
@@ -258,12 +260,6 @@ input#top-search:focus {
   justify-content: space-between;
 }
 div#toggle-container {
-
-}
-
-@media (min-width: 768px) {
-
-}
-@media (min-width: 1024px) {
-
+ width: 95%;
+ margin: auto;
 }
