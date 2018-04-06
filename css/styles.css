@@ -21,17 +21,12 @@ a {
 
 .alert {
     padding: 20px;
-    background-color: #f44336;
-    color: var(--main-bg-color);
+    background-color: #f44336; /* Red */
+    color: white;
     margin-bottom: 15px;
 }
- svg#green-dot {
-   padding-right: 20px;
-   margin-bottom: 1.3em;
- }
-svg#Layer_1 {
-  padding-right: 30px;
-}
+
+/* The close button */
 .closebtn {
     margin-left: 15px;
     color: white;
@@ -40,9 +35,14 @@ svg#Layer_1 {
     font-size: 22px;
     line-height: 20px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
 
+}
 .container {
   width: 95%;
   margin: 1em auto;
@@ -84,13 +84,11 @@ div#flex-end {
   justify-content: flex-end;
   align-items: center;
 }
-ul#nav-bar {
+div#nav-bar {
   background: var(--main-nav-color);
   display: flex;
   justify-content: space-around;
   padding: 1em;
-  list-style-type: none;
-  margin: 0;
 }
 
 .avatar {
@@ -132,6 +130,11 @@ padding-right: 40px;
   margin: .3em;
 
 }
+
+.social-flex{
+  display: flex;
+  flex-direction: column;
+}
 span.social_Media {
    margin-left: 3.5em;
    margin-top: .3em;
@@ -166,7 +169,6 @@ img.avatar_ok {
 div.widget-flex {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
 
 }
 div.wiget-container {
@@ -304,37 +306,5 @@ div#toggle-container {
   .container {
     width: 70%;
   }
-
-}
-@media (min-width: 1024px ) {
-   ul#nav-bar {
-    float: left;
-    display: block;
-    height: 3065px;
-
-   }
-   div#navBar {
-     width: 10%;
-   }
-   li {
-     margin-bottom: 2em;
-   }
-   .container {
-     float: right;
-     width: 90%;
-     margin-top: 0;
-   }
-   div#flex-canvas {
-     display: flex;
-     justify-content: space-between;
-   }
-   div.fit-charts {
-     width: 40%;
-   }
-   .clear::after {
-     content: "";
-    clear: both;
-    display: table;
-   }
 
 }
