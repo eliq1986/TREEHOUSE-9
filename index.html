@@ -161,21 +161,21 @@
 
 
 <!--CHARTS BEGIN-------------------------------->
-  <div>
-      <canvas id="lineChart" height="400" width="400">
+  <div id="line-chart">
+      <canvas id="lineChart" >
               <!--Line CHART-->
       </canvas>
   </div>
 
 <div id="flex-canvas">
     <div class="fit-charts">
-       <canvas id="barChart" width="400" height="400">
+       <canvas id="barChart">
         <!--Bar CHART-->
        </canvas>
    </div>
 
     <div class="fit-charts">
-       <canvas id="pieChart" width="400" height="400">
+       <canvas id="pieChart">
        <!--Doughnut/pie Chart-->
        </canvas>
    </div>
@@ -186,7 +186,7 @@
 
 <!--SOCIAL WIDGET STARTS---------------------->
 <h3>Social Stats</h3>
-<div class="flexIt">
+<div class="widget-flex">
    <div class="flexIt">
       <div>
            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="-30 -25 40 70">
@@ -242,22 +242,24 @@
 
 <!--Social Widget Starts---------------------->
 <h3>New Members</h3>
-<div class="wiget-container">
-<img src="images/65.jpg" alt="darth vadar" class="avatar_ok">
-    <div class="widget-flex">
-    <span class="widget-name">
-        Victoria Chambers
-    </span>
-    <span class="widget-date">
-      10/15/15
-    </span>
-  </div>
-    <span class="email">
-      <a href="#">
-       victoria.chambers80@example.com
-     </a>
-   </span>
-</div>
+<div class="flex-social">
+  <div>
+    <div class="wiget-container">
+    <img src="images/65.jpg" alt="darth vadar" class="avatar_ok">
+        <div class="widget-flex">
+        <span class="widget-name">
+            Victoria Chambers
+        </span>
+        <span class="widget-date">
+          10/15/15
+        </span>
+      </div>
+        <span class="email">
+          <a href="#">
+           victoria.chambers80@example.com
+         </a>
+       </span>
+    </div>
 
 <div class="wiget-container">
 <img src="images/66.jpg" alt="darth vadar" class="avatar_ok">
@@ -309,11 +311,14 @@
      </a>
    </span>
 </div>
+</div>
+
 <!--SOCIAL WIDGET ENDS-------------------------->
 
 
 <!--Activity Widget Starts---------------------->
-<h3>Recent Activity</h3>
+<div>
+
 
 <div class="wiget-container arrow">
 <img src="images/65.jpg" alt="darth vadar" class="avatar_ok">
@@ -369,6 +374,8 @@
         1 day ago
      </a>
    </span>
+</div>
+</div>
 </div>
 <!--ACTIVITY WIDGET ENDS---------------------->
 

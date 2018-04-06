@@ -164,6 +164,7 @@ img.avatar_ok {
 }
 div.widget-flex {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 
 }
@@ -297,6 +298,9 @@ div#toggle-container {
  width: 95%;
  margin: auto;
 }
+div#line-chart {
+
+}
 
 @media (min-width: 768px) {
   .container {
@@ -308,7 +312,7 @@ div#toggle-container {
    ul#nav-bar {
     float: left;
     display: block;
-    height: 3065px;
+    height: 1024px;
 
    }
    div#navBar {
@@ -333,6 +337,21 @@ div#toggle-container {
      content: "";
     clear: both;
     display: table;
+   }
+   div#line-chart {
+     width: 95%;
+     margin: auto;
+   }
+   .flex-social {
+     display: flex;
+     justify-content: space-around;
+   }
+
+   div.widget-flex {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+
    }
 
 }
