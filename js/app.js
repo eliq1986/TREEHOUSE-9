@@ -96,6 +96,7 @@ let pChart= new Chart(pieChart, {
          display: true,
          text: "Mobile User",
          fontSize: 20,
+         maintainAspectRatio: false,
          position: "top",
 
 
@@ -108,7 +109,6 @@ let pChart= new Chart(pieChart, {
 
        }
 });
-
 
 
 
