@@ -84,11 +84,13 @@ div#flex-end {
   justify-content: flex-end;
   align-items: center;
 }
-div#nav-bar {
+ul#nav-bar {
   background: var(--main-nav-color);
   display: flex;
   justify-content: space-around;
   padding: 1em;
+  list-style-type: none;
+  margin-top: 0;
 }
 
 .avatar {
@@ -304,7 +306,66 @@ div#toggle-container {
 
 @media (min-width: 768px) {
   .container {
-    width: 70%;
+    width: 90%;
   }
+
+}
+  @media (min-width: 1024px) {
+    ul#nav-bar {
+    float: left;
+    display: block;
+    height: 1024px;
+
+   }
+   div#navBar {
+     width: 10%;
+   }
+   li {
+     margin-bottom: 2em;
+   }
+   .container {
+     float: right;
+     width: 90%;
+     margin-top: 0;
+   }
+   div#flex-canvas {
+     display: flex;
+     justify-content: space-between;
+   }
+   div.fit-charts {
+     width: 40%;
+   }
+   .clear::after {
+     content: "";
+    clear: both;
+    display: table;
+   }
+   div#line-chart {
+     width: 95%;
+     margin: auto;
+   }
+   .flex-social {
+     display: flex;
+     justify-content: space-around;
+   }
+
+
+   div.widget-flex {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+
+   }
+   div#chart-flex {
+     display: flex;
+     justify-content: space-around;
+
+
+   }
+  div.graph-container {
+    width: 40%;
+   }
+
+
 
 }

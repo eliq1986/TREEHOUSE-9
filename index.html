@@ -40,7 +40,9 @@
    </div>
    </header>
   <main>
-<div id="nav-bar">
+<div id="nav-container">
+  <ul id="nav-bar">
+    <li>
   <a href="#">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -62,6 +64,8 @@
             </g>
             </svg>
 </a>
+</li>
+<li>
 <a href="#">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -83,6 +87,8 @@
             </g>
             </svg>
 </a>
+</li>
+<li>
 <a href="#">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -102,7 +108,8 @@
             </g>
             </svg>
 </a>
-
+</li>
+<li>
             <?xml version="1.0" encoding="utf-8"?>
             <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
             <svg height="35" width="35" version="1.1" id="Line_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -124,6 +131,7 @@
             	</g>
             </g>
             </svg>
+          </li>
 </div>
 <div class="container">
 <!--Search BAR--------------------------------->
@@ -135,22 +143,28 @@
 <!--SEARCH BAR END----------------------------->
 <h2>DASHBOARD</h2>
 <div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <span class="closebtn">&times;</span>
   This is an alert box.
 </div>
 <!--CHARTS BEGIN------------------------------->
-<canvas id="lineChart" height="400" width="400">
+<canvas id="lineChart">
   <!--Line CHART-->
 </canvas>
 
-<canvas id="barChart" width="400" height="400">
-    <!--Bar CHART-->
-</canvas>
+ <div id="chart-flex">
+     <div class="graph-container">
+                <canvas id="barChart">
+                    <!--Bar CHART-->
+                </canvas>
+     </div>
 
-<canvas id="pieChart" width="400" height="400">
-    <!--Doughnut/pie Chart-->
-</canvas>
+    <div class="graph-container">
+                  <canvas id="pieChart" >
 
+                      <!--Doughnut/pie Chart-->
+                  </canvas>
+    </div>
+</div>
 <!--CHARTS END-------------------------------->
 
 
@@ -487,6 +501,10 @@
 
  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
  </script>
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
  <script type="text/javascript" src="js/app.js">
  </script>
