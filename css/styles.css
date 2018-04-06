@@ -152,6 +152,7 @@ span.widget-name {
  span.email{
   color: black;
   margin-left: 1em;
+  font-size: 0.9em;
 
 }
 img.avatar_ok {
@@ -164,8 +165,8 @@ img.avatar_ok {
 }
 div.widget-flex {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
 
 }
 div.wiget-container {
@@ -298,9 +299,6 @@ div#toggle-container {
  width: 95%;
  margin: auto;
 }
-div#line-chart {
-
-}
 
 @media (min-width: 768px) {
   .container {
@@ -312,7 +310,7 @@ div#line-chart {
    ul#nav-bar {
     float: left;
     display: block;
-    height: 1024px;
+    height: 3065px;
 
    }
    div#navBar {
@@ -337,21 +335,6 @@ div#line-chart {
      content: "";
     clear: both;
     display: table;
-   }
-   div#line-chart {
-     width: 95%;
-     margin: auto;
-   }
-   .flex-social {
-     display: flex;
-     justify-content: space-around;
-   }
-
-   div.widget-flex {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-
    }
 
 }
