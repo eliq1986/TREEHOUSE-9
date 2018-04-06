@@ -6,7 +6,7 @@
   --lighterPurple: #d6cee0; /*line chart purple*/
   --twitterBlue: #00aced; /*twitterBlue*/
   --faceBookBlue: #3b5998; /*facebookBlue*/
-  --concreteGray: #666666;
+  --concreteGray: #757575;
 }
 
 p {
@@ -24,6 +24,15 @@ a {
     background-color: #f44336; /* Red */
     color: white;
     margin-bottom: 15px;
+}
+span#top-header {
+  display: block;
+  color: #757575;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em;
+
 }
 
 /* The close button */
@@ -316,7 +325,7 @@ div#toggle-container {
     ul#nav-bar {
     float: left;
     display: flex;
-    height: 140vh;
+    height: 150vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -392,12 +401,12 @@ div#toggle-container {
      padding-left: 1em;
      margin: 0;
    }
-
    div#social-widgets {
-     display: flex;
-     justify-content: space-around;
+
 
    }
+
+
    .clear:after {
     content: "";
     display: table;
@@ -409,6 +418,8 @@ div#toggle-container {
    }
    div.social {
      width: 49%;
+     border-left: 2px solid #F5F5F5;
+
    }
    body {
      max-width: 1024px;
@@ -416,18 +427,26 @@ div#toggle-container {
      margin: auto;
 
    }
-   .wiget-container {
-     border-top: 1px solid black;
-   }
+
    div#social-widgets {
+     display: flex;
      margin-top: 2em;
+     align-items: baseline;
+     justify-content: space-between;
+    border-bottom: 2px solid #F5F5F5;
+    padding-bottom: 1em;
+
+
    }
    .bottom-flex {
+     margin: 2em 0;
      display: flex;
      justify-content: space-around;
+
+
    }
-   div#message-container {
-     width: 45%;
+   div#message-container, div#toggle-flex {
+     width: 50%;
 
    }
    div#toggle-container {
@@ -437,14 +456,56 @@ div#toggle-container {
       width: 45%;
     }
     div#toggle-container {
-      justify-content: flex-start;
+      justify-content: space-around;
       margin: 0;
       width: 70%;
     }
-    li:hover {
 
-    }
+.email {
+  padding-left: 5px;
+}
+div#activity1 {
+  padding-bottom: 1em;
+  border-bottom: 2px solid #F5F5F5;
+}
+div#activity2 {
+  padding-bottom: 1.1em;
+}
+div#activity3 {
+  padding-bottom: 1.1em;
+}
+#bottom-button {
+  margin-top: 0;
+}
+select {
+margin-bottom: 11px;
+}
+.bottom-border {
+  border-bottom: 2px solid #F5F5F5;
+}
+input#top-search {
+  width: 50%;
+  float: right;
+  background: white;
+  background: url("../icons/magnify.svg") no-repeat 97% 50% #F5F5F5;
+  background-size: 20px 20px;
+}
+form#searchBar {
+  padding: .5em 1em;
+ float: right;
+ width: 80%;
+ border: .5px solid #F2F2F2;
+ background-color: #F2F2F2;
+ box-shadow: inset 0 0 1px;
+
+
+}
+span#top-header{
+  padding-top: .5em;
+  width: 20%;
+  float: left;
 
 
 
+}
    }

@@ -136,13 +136,15 @@
 </div>
 <div class="container">
 <!--Search BAR--------------------------------->
-<form  action="index.html" method="post">
+<div class="clear">
+<form  action="index.html" method="post" id="searchBar">
      <fieldset>
           <input type="text" name="search_field"  id="top-search" placeholder="Search">
      </fieldset>
 </form>
 <!--SEARCH BAR END----------------------------->
-<h2>DASHBOARD</h2>
+<span id="top-header">DASHBOARD</span>
+</div>
 <div class="alert">
   <span class="closebtn">&times;</span>
   This is an alert box.
@@ -306,7 +308,7 @@
     <div class="social">
     <h3>Recent Activity</h3>
 
-    <div class="wiget-container arrow">
+    <div class="wiget-container arrow" id="activity1">
     <img src="images/65.jpg" alt="darth vadar" class="avatar_ok">
         <div class="widget-flex">
         <span class="widget-name">
@@ -314,13 +316,12 @@
         </span>
       </div>
         <span class="email">
-          <a href="#">
-            4 hours ago
-         </a>
+          4 Hours Ago
        </span>
     </div>
 
-    <div class="wiget-container arrow">
+
+    <div class="wiget-container arrow" id="activity2">
     <img src="images/66.jpg" alt="darth vadar" class="avatar_ok">
         <div class="widget-flex">
         <span class="widget-name">
@@ -328,13 +329,11 @@
         </span>
       </div>
         <span class="email">
-          <a href="#">
             5 hours ago
-         </a>
        </span>
     </div>
 
-    <div class="wiget-container arrow">
+    <div class="wiget-container arrow" id="activity3">
     <img src="images/76.jpg" alt="darth vadar" class="avatar_ok">
         <div class="widget-flex">
         <span class="widget-name">
@@ -342,13 +341,13 @@
         </span>
       </div>
         <span class="email">
-          <a href="#">
+
           5 hours ago
-         </a>
+
        </span>
     </div>
 
-    <div class="wiget-container arrow">
+    <div class="wiget-container arrow" id="activity4" >
     <img src="images/94.jpg" alt="darth vadar" class="avatar_ok">
         <div class="widget-flex">
         <span class="widget-name">
@@ -356,9 +355,9 @@
         </span>
       </div>
         <span class="email">
-          <a href="#">
+
             1 day ago
-         </a>
+
        </span>
     </div>
   </div>
@@ -502,7 +501,7 @@
    	<option>(GMT+13:00) Nuku'alofa</option>
 </select>
 
-<div class="bottom-flex">
+<div class="bottom-flex" id="bottom-button">
 <button type="button" class="save_cancel-btn" name="save">Save</button>
 <button type="button" name="cancel" class="save_cancel-btn" >Cancel</button>
 </div>
