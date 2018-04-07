@@ -462,15 +462,20 @@ div#toggle-container {
 
    }
    .bottom-flex {
-     margin: 2em 0;
      display: flex;
      justify-content: space-around;
 
 
    }
+    div#toggle-flex {
+      margin-right: 1.5em;
+    }
    div#message-container, div#toggle-flex {
-     width: 50%;
+     width: 47%;
 
+   }
+   div#message-container {
+     border-right: 2px solid #F5F5F5;
    }
    div#toggle-container {
      width: 45%;
