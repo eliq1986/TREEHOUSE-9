@@ -23,7 +23,7 @@ let lineChart = new Chart(CHART, {
     },
    options: {
        title: {
-        display: true,
+        display: false,
         text: "Traffic",
         fontSize: 20,
         position: "top",
@@ -63,7 +63,7 @@ let bChart= new Chart(barChart, {
     },
     options: {
         title: {
-         display: true,
+         display: false,
          text: "Daily Traffic",
          fontSize: 20,
          position: "top"
@@ -93,7 +93,7 @@ let pChart= new Chart(pieChart, {
     },
     options: {
         title: {
-         display: true,
+         display: false,
          text: "Mobile User",
          fontSize: 20,
          maintainAspectRatio: false,

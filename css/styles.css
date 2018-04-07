@@ -34,6 +34,10 @@ span#top-header {
   padding: 1em;
 
 }
+svg#green-dot {
+  padding-right: 15px;
+  margin-bottom: 1em;
+}
 
 /* The close button */
 .closebtn {
@@ -60,6 +64,9 @@ span#top-header {
 .alert {
   background: var(--main-bg-color);
   color: white;
+}
+svg#green-dot {
+  padding-right: 20px;
 }
 
 div#top {
@@ -325,7 +332,7 @@ div#toggle-container {
     ul#nav-bar {
     float: left;
     display: flex;
-    height: 150vh;
+    height: 163vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -373,19 +380,31 @@ div#toggle-container {
    }
    div#chart-flex {
      display: flex;
-     justify-content: space-around;
+
+     margin-top: 1em;
+     justify-content: space-evenly;
+     border-top: 2px solid #F2F2F2;
+
+
+
 
 
    }
   div.graph-container {
     width: 40%;
+
+   }
+   div#graph_container-border {
+     border-left: 2px solid #F2F2F2;
+
+
    }
    div.flex_social-desktop {
-     border-top: 2px solid #F2F2F2;
+
      border-bottom: 2px solid #F2F2F2;
-     padding-top: 2em;
+
      padding-bottom: 2em;
-     margin-top: 1em;
+
      display: flex;
      justify-content: space-around;
    }
@@ -398,12 +417,12 @@ div#toggle-container {
    }
    h3 {
      text-align: left;
-     padding-left: 1em;
      margin: 0;
+     padding-top: 1em;
+     padding-bottom: 1em;
    }
-   div#social-widgets {
-
-
+   canvas#barChart, canvas#pieChart {
+     margin: 1em auto;
    }
 
 
@@ -422,7 +441,7 @@ div#toggle-container {
 
    }
    body {
-     max-width: 1024px;
+     max-width: 1050px;
      max-height: 1180px;
      margin: auto;
 
@@ -504,8 +523,17 @@ span#top-header{
   padding-top: .5em;
   width: 20%;
   float: left;
-
+}
+  span.amount {
+    margin-left: 3em;
+  }
+h3#social-title {
+  border-top: 2px solid #F2F2F2;
+  padding-top: 1em;
+}
+span.social_Media {
+  font-weight: bold;
+}
 
 
 }
-   }
