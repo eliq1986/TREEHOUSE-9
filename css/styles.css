@@ -393,10 +393,11 @@ div#toggle-container {
   div.graph-container {
     width: 40%;
 
+
    }
    div#graph_container-border {
      border-left: 2px solid #F2F2F2;
-
+     margin-right: 76px;
 
    }
    div.flex_social-desktop {
@@ -436,9 +437,14 @@ div#toggle-container {
      margin: auto;
    }
    div.social {
-     width: 49%;
-     border-left: 2px solid #F5F5F5;
+     width: 50%;
+     margin-right: 0;
 
+
+   }
+   div#recent-activity {
+     border-left: 2px solid #F5F5F5;
+     width: 55%;
    }
    body {
      max-width: 1050px;
@@ -449,11 +455,9 @@ div#toggle-container {
 
    div#social-widgets {
      display: flex;
-     margin-top: 2em;
-     align-items: baseline;
-     justify-content: space-between;
+     justify-content: space-evenly;
     border-bottom: 2px solid #F5F5F5;
-    padding-bottom: 1em;
+
 
 
    }
@@ -484,7 +488,7 @@ div#toggle-container {
   padding-left: 5px;
 }
 div#activity1 {
-  padding-bottom: 1em;
+  padding-bottom: 19px;
   border-bottom: 2px solid #F5F5F5;
 }
 div#activity2 {
@@ -492,6 +496,10 @@ div#activity2 {
 }
 div#activity3 {
   padding-bottom: 1.1em;
+}
+div#activity4 {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #bottom-button {
   margin-top: 0;
@@ -533,6 +541,15 @@ h3#social-title {
 }
 span.social_Media {
   font-weight: bold;
+}
+.widget-border {
+   border-bottom: 2px solid #F2F2F2;
+   width: 96%;
+   margin: auto;
+}
+h4 {
+  padding-left: 10px;
+  color: var(--concreteGray);
 }
 
 
