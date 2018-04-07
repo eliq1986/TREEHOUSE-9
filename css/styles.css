@@ -339,7 +339,7 @@ h4 {
     ul#nav-bar {
     float: left;
     display: flex;
-    height: 163vh;
+    height: 150vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
