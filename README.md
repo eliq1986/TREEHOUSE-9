@@ -2,7 +2,7 @@
 [DEMO](https://eliq1986.github.io/TREEHOUSE-9/)
 
 ### Skills Learned:
-- Jquery
+- JQuery
 - Manipulating charts
 - JavaScript
 - Responsive Web Development
